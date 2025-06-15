@@ -1,0 +1,14 @@
+<head>
+    <title>Titanic Survival Prediction result</title>
+    <link rel="stylesheet" href="../static/style1.css">
+</head>
+
+<body>
+    {% if pred_rslt==0 %}
+        <h1> NOT SURVIVED</h1>
+        <img src="{{ url_for('static', filename='not survived.jpg') }}">
+    {% elif pred_rslt==1 %}
+        <h1> SURVIVED</h1>
+        <img src="{{ url_for('static', filename='survived.jpg') }}">
+    {% endif %}
+</body>

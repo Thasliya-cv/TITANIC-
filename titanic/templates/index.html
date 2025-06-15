@@ -1,0 +1,44 @@
+<head>
+    <title> Titanic survival prediction </title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <h1> TITANIC SURVIVAL PREDICTION </h1>
+    <form action="/prediction" method="post">
+        <h3> Enter the passenger details below </h3>
+        <label for="Age"> Age :</label>
+        <input type="number" min='0'  name="Age"  required><br>
+        <label for="Sex"> Gender </label>
+        <select name="Sex" required>
+            <option hidden disabled selected value> -- select an option -- </option>
+            <option value="Male"> Male </option>
+            <option value="Female"> Female </option>
+        </select><br>
+
+        <label for="Pclass"> passenger class </label>
+         <select name="Pclass" required>
+            <option hidden disabled selected value> -- select an option -- </option>
+            <option value="1"> 1st </option>
+            <option value="2"> 2nd </option>
+            <option value="3"> 3rd </option>
+        </select><br>
+
+        <label for="Embarked"> port of embarkation </label>
+         <select name="Embarked" required>
+            <option hidden disabled selected value> -- select an option -- </option>
+            <option value="C"> Cherbourg </option>
+            <option value="Q"> Queenstown </option>
+        </select><br>
+
+        <label for="SibSp"> Number of siblings/spouses aboard </label>
+        <input type="number" min="0" name="SibSp" required><br>
+
+        <label for="Parch"> Number of parents/children aboard </label>
+        <input type="number" min='0' name="Parch" required><br>
+        
+        <button type="submit"> Predict </button>
+
+    </form>
+
+</body>

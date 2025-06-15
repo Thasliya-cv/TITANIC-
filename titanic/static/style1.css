@@ -1,0 +1,34 @@
+/* Result Heading */
+h1 {
+    color: #0484be;
+    text-align: center;
+    margin-top: 50px;
+    animation: showup 3s ease-in-out;
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+}
+
+/* Prediction Image Styling */
+img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;  /* or use 'cover' */
+    display: block;
+    margin: 40px auto;
+    animation: showup 3s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes showup {
+    0% { opacity: 0; transform: scale(0.95); }
+    50% { opacity: 1; transform: scale(1.02); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Optional: Add background if needed */
+body {
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
